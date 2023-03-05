@@ -10,17 +10,21 @@ The dataset has Pedestrain Images and their correspondin Masks.
 The typical imgage is RBG (3, 559, 556): 
 
 The following is an example:
+
 ![image](https://user-images.githubusercontent.com/40626584/222969497-7cf443bc-c407-47d8-97a7-b683e17a0000.png)
 
 While the Masks looks like this with simple PIL imshow:
+
 ![image](https://user-images.githubusercontent.com/40626584/222969522-e94511ed-2f95-4f48-af98-c88fe47b0566.png)
 
 This is so because segmentaion masks of pedestrians contains numbers (1, 2, 3..) depending on the number of pedestrians in the image.
 You can see this by saving this numpy as csv and then applying conditional formatting using Excel.
 The below figure shows the section of this. Here the Pedestrian 1 has all pixels filled with '1' which are highlighted in Red. while the background is white and filled with '0s'.
+
 ![image](https://user-images.githubusercontent.com/40626584/222969738-84ef846c-87fa-4c6e-b35d-f942bd3c0d6d.png)
 
 Although on applying an appropriate pallette this mask looks like this:
+
 ![image](https://user-images.githubusercontent.com/40626584/222969626-3c3a3d81-3b93-46df-b8f3-49efc9255673.png)
 
 
@@ -52,7 +56,7 @@ Overall, the AnchorGenerator module plays a key role in the object detection pip
 For example:
   +-------------------------+-------------------------+-------------------------+
   |                         |                         |                         |
-  |    (a) Scale = 0.5       |    (b) Scale = 1.0       |    (c) Scale = 2.0       |
+  |    (a) Scale = 0.5       |    (b) Scale = 1.0       |    (c) Scale = 2.0    |
   |   Aspect ratio = 0.5    |   Aspect ratio = 0.5    |   Aspect ratio = 0.5    |
   |                         |                         |                         |
   |     +-------+           |     +-------+           |     +-------+           |
