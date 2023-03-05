@@ -58,32 +58,8 @@ Overall, the AnchorGenerator module plays a key role in the object detection pip
 
 For example:
 
-  +-------------------------+-------------------------+-------------------------+
-  |                         |                         |                         |
-  |    (a) Scale = 0.5       |    (b) Scale = 1.0       |    (c) Scale = 2.0    |
-  |   Aspect ratio = 0.5    |   Aspect ratio = 0.5    |   Aspect ratio = 0.5    |
-  |                         |                         |                         |
-  |     +-------+           |     +-------+           |     +-------+           |
-  |     |       |           |     |       |           |     |       |           |
-  |     |   A   |           |     |   A   |           |     |   A   |           |
-  |     |       |           |     |       |           |     |       |           |
-  |     +-------+           |     +-------+           |     +-------+           |
-  |                         |                         |                         |
-  |                         |                         |                         |
-  |     +-------+           |     +-------+           |     +-------+           |
-  |     |       |           |     |       |           |     |       |           |
-  |     |   B   |           |     |   B   |           |     |   B   |           |
-  |     |       |           |     |       |           |     |       |           |
-  |     +-------+           |     +-------+           |     +-------+           |
-  |                         |                         |                         |
-  |                         |                         |                         |
-  |     +-------+           |     +-------+           |     +-------+           |
-  |     |       |           |     |       |           |     |       |           |
-  |     |   C   |           |     |   C   |           |     |   C   |           |
-  |     |       |           |     |       |           |     |       |           |
-  |     +-------+           |     +-------+           |     +-------+           |
-  |                         |                         |                         |
-  +-------------------------+-------------------------+-------------------------+
+![image](https://user-images.githubusercontent.com/40626584/222970109-aea8ac22-4c02-467b-a270-d143c6300cfa.png)
+
 
 This visualization shows three different anchor boxes that are generated at a single location on a feature map using the AnchorGenerator module. The anchor boxes have different scales (0.5, 1.0, and 2.0) and a fixed aspect ratio of 0.5. Each anchor box is represented as a colored rectangle on the right-hand side of the diagram. These anchor boxes are used to propose regions of the input image that are likely to contain objects, which are then passed to the object detection network for further processing.
 
