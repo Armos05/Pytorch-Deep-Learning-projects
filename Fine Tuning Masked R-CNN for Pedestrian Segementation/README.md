@@ -39,7 +39,10 @@ Although on applying an appropriate pallette this mask looks like this:
 
 ## Training
 
-To train the Fast R-CNN model on the PennFudanDataset clone the repository and run ```python model.py```.
+To train the Fast R-CNN model on the PennFudanDataset clone the repository and run 
+```
+python model.py
+```
 
 This will train the model on the dataset for 10 epochs with a learning rate of 0.001 and a batch size of 4. You can modify the hyperparameters according to your needs.
 
@@ -54,6 +57,7 @@ The AnchorGenerator module is often used in conjunction with the RPN (Region Pro
 Overall, the AnchorGenerator module plays a key role in the object detection pipeline, as it provides a set of anchor boxes that the model can use to identify objects in the input image.
 
 For example:
+
   +-------------------------+-------------------------+-------------------------+
   |                         |                         |                         |
   |    (a) Scale = 0.5       |    (b) Scale = 1.0       |    (c) Scale = 2.0    |
